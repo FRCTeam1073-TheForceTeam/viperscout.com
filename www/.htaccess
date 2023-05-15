@@ -1,0 +1,32 @@
+Options +ExecCGI
+AddHandler cgi-script .cgi .pl
+AddType text/html;charset=UTF-8 .html
+AddType video/webm .webm
+AddType video/mp4 .mp4
+Header always unset "<!-- warning"
+Redirect permanent /favicon.ico /logo.png
+
+# Allow most files to be cached for 12 hours
+Header set Cache-Control "max-age=28800, public, must-revalidate"
+<FilesMatch "\.cgi$">
+	# Uploads and dynamic data should be fetched fresh every 10 seconds
+	# Unless disconnected from the internet in which case they
+	# Can be used from cache stale
+	Header set Cache-Control "max-age=10, stale-if-error=28800, public, must-revalidate"
+</FilesMatch>
+<If "%{REMOTE_ADDR} == '127.0.0.1'">
+	# For development from local machine
+	Header set Cache-Control no-store
+</If>
+<IfDefine DEBUG>
+	# No cache in debug mode
+	Header set Cache-Control no-store
+</IfDefine>
+
+DirectoryIndex index.html /markdown.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.*)\.html$
+RewriteCond %1.md -f
+RewriteRule ^ /markdown.html [L]
