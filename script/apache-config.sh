@@ -12,8 +12,10 @@ HTTPS_INCLUDE="include/oster-ssl.conf"
 if [ `hostname -f ` == *osteraws.ostermiller.org ]
 then
 	SERVER_NAME=viperscout.com
+    HTTPS=0
 else
 	SERVER_NAME="viperscout.`hostname -f`"
+    HTTPS=0
 fi
 
 TMPCONF=`mktemp /tmp/$APACHE_SITE_NAME-XXXXXXXXXX.conf`
@@ -36,19 +38,36 @@ fi
 APACHE_DIR_CONF=$APACHE_DIR
 APACHE_DIR_CONF=${APACHE_DIR_CONF/#\/c\//C:\/}
 
-echo '<VirtualHost *:80>' > $TMPCONF
-echo "	Servername $SERVER_NAME" >> $TMPCONF
-echo "	ServerAlias www.$SERVER_NAME" >> $TMPCONF
-echo "	Redirect / https://$SERVER_NAME/" >> $TMPCONF
-echo '</VirtualHost>' >> $TMPCONF
-echo '<VirtualHost *:443>' >> $TMPCONF
+if [ $HTTPS == 1 ]
+then
+    echo '<VirtualHost *:80>' > $TMPCONF
+    echo "	Servername $SERVER_NAME" >> $TMPCONF
+    echo "	ServerAlias *.$SERVER_NAME" >> $TMPCONF
+    echo "	Redirect / https://$SERVER_NAME/" >> $TMPCONF
+    echo '</VirtualHost>' >> $TMPCONF
+fi
+if [ $HTTPS == 1 ]
+then
+    echo '<VirtualHost *:443>' >> $TMPCONF
+else
+    echo '<VirtualHost *:80>' >> $TMPCONF
+fi
 echo "	Servername www.$SERVER_NAME" >> $TMPCONF
+echo "	ServerAlias *.$SERVER_NAME" >> $TMPCONF
 echo "	Include $HTTPS_INCLUDE" >> $TMPCONF
 echo "	Redirect / https://$SERVER_NAME/" >> $TMPCONF
 echo '</VirtualHost>' >> $TMPCONF
-echo '<VirtualHost *:443>' >> $TMPCONF
+if [ $HTTPS == 1 ]
+then
+    echo '<VirtualHost *:443>' >> $TMPCONF
+else
+    echo '<VirtualHost *:80>' >> $TMPCONF
+fi
 echo "	Servername $SERVER_NAME" >> $TMPCONF
-echo "	Include $HTTPS_INCLUDE" >> $TMPCONF
+if [ $HTTPS == 1 ]
+then
+    echo "	Include $HTTPS_INCLUDE" >> $TMPCONF
+fi
 echo "	DocumentRoot $DOCUMENT_ROOT" >> $TMPCONF
 echo "	<Directory $DOCUMENT_ROOT/>" >> $TMPCONF
 echo '		AllowOverride All' >> $TMPCONF
