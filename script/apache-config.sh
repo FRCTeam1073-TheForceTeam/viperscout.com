@@ -9,7 +9,7 @@ DOCUMENT_ROOT=${DOCUMENT_ROOT/#\/c\//C:\/}
 APACHE_SITE_NAME="viperscout"
 HTTPS_INCLUDE="include/oster-ssl.conf"
 
-if [ `hostname -f ` == *osteraws.ostermiller.org ]
+if [[ `hostname -f ` == *osteraws.ostermiller.org ]]
 then
 	SERVER_NAME=viperscout.com
     HTTPS=0
