@@ -15,7 +15,7 @@ then
     HTTPS=0
 else
 	SERVER_NAME="viperscout.`hostname -f`"
-    HTTPS=0
+    HTTPS=1
 fi
 
 TMPCONF=`mktemp /tmp/$APACHE_SITE_NAME-XXXXXXXXXX.conf`
@@ -54,7 +54,10 @@ else
 fi
 echo "	Servername www.$SERVER_NAME" >> $TMPCONF
 echo "	ServerAlias *.$SERVER_NAME" >> $TMPCONF
-echo "	Include $HTTPS_INCLUDE" >> $TMPCONF
+if [ $HTTPS == 1 ]
+then
+    echo "	Include $HTTPS_INCLUDE" >> $TMPCONF
+fi
 echo "	Redirect / https://$SERVER_NAME/" >> $TMPCONF
 echo '</VirtualHost>' >> $TMPCONF
 if [ $HTTPS == 1 ]
