@@ -43,7 +43,6 @@ ol,ul,p{text-align:left;max-width:40em;margin:0 auto}
 h1{padding:0 2.5em}
 #fullscreen{position:fixed;bottom:0.4em;right:0.4em;font-size:200%;cursor:pointer}
 #hamburger{position:fixed;top:0;right:0.4em;font-size:300%;cursor:pointer}
-#hamburger.hasUploads{background-color:var(--highlight-bg-color)}
 #mainMenu .dependUpload{font-weight:bold;color:var(--highlight-fg-color)}
 #mainMenu h4 {margin:.75em 0 0 0}
 #mainMenu ul {list-style:none;margin:0;padding:0}
@@ -57,4 +56,9 @@ video{width:100%;max-width:1024px}
 @media print {
 	html{background:white;color:black}
 	#hamburger{display:none}
+}
+@media only screen and (min-width:1024px){
+	#hamburger{display:none}
+	#mainMenu{display:block;position:absolute;left:0;top:70px;transform:none;width:200px}
+	#main{padding-left:220px;}
 }
