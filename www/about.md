@@ -1,1 +1,1 @@
-Viper is a First Robotics Competition scouting app produced by [FRC team 1073](https://www.frc1073.org/). It is free open-source software (MIT license). The app [can be downloaded from Github](https://github.com/FRCTeam1073-TheForceTeam/viper).
+Viper is a FIRST Robotics Competition scouting app produced by [FRC team 1073](https://www.frc1073.org/). It is free open-source software (MIT license). The app [can be downloaded from Github](https://github.com/FRCTeam1073-TheForceTeam/viper).
