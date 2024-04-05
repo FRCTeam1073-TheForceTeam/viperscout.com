@@ -41,6 +41,7 @@ ol,ul,p{text-align:left;max-width:40em;margin:0 auto}
 .side-by-side{display:inline-block;vertical-align:top;margin:1em;box-sizing:content-box}
 .winner{border-left-color:var(--winner-color);border-right-color:var(--winner-color)}
 h1{padding:0 2.5em}
+h2{margin-top:1.5em}
 #fullscreen{position:fixed;bottom:0.4em;right:0.4em;font-size:200%;cursor:pointer}
 #hamburger{position:fixed;top:0;right:0.4em;font-size:300%;cursor:pointer}
 #mainMenu .dependUpload{font-weight:bold;color:var(--highlight-fg-color)}
