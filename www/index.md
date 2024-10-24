@@ -1,6 +1,6 @@
 # Viper
 
-Viper is a FIRST Robotics Competition scouting app produced by [FRC team 1073](https://www.frc1073.org/). Origins of the name... [read more](/about.html)
+Viper is a FIRST Robotics Competition (FRC) and FIRST Tech Challenge (FTC) scouting app produced by [FRC team 1073](https://www.frc1073.org/). Origins of the name... [read more](/about.html)
 
 ## Features
 
