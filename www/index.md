@@ -26,7 +26,7 @@ Your team can have an instance of Viper on a subdomain of viperscout.com: [regis
 
 Get the latest announcement or ask questions in the forums: [Viper Scouting App 2024 - Chief Delphi](https://www.chiefdelphi.com/t/viper-scouting-app-2024/)
 
-Report bugs, request features, get tech support, or chat with other Viper users: [Join the Viper Scout Discord Server](https://discord.com/invite/TZB8bxwhCk)
+Report bugs, request features, get tech support, or chat with other Viper users: [Join the Viper Scout Discord Server](https://discord.gg/BsRfgKxHqU)
 
 ## Public data
 
