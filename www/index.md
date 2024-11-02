@@ -34,7 +34,7 @@ Event data that we publish publicly is available at [public.viperscout.com](http
 
 ## Testimonials
 
-### Team 7635
+### Team 7636 Robomania, Taichung, Chinese Taipei  
 
 I just want to express my appreciation for the scouting system - Viper!
 
@@ -44,6 +44,6 @@ And - we found Viper. The documentation is clear, so we rented a server, and dep
 
 Thank you for your hard work, that really helped us a lot. Please keep making this project available in the future!😊
 
-### Team 1772
+### Team 1772, Gravataí, Brazil
 
 Team 1772 used Viper during the 2024 season, and it really leveled up our picklist process and understanding of other teams. It also made a big difference in how our students feel about scouting. At the start of the season, scouting felt like a chore, and nobody wanted to do it. Now, we have 7 students genuinely interested in scouting (around 35% of our team), and we’re sure Viper had a lot to do with that. It made scouting easier and more fun, especially with the data visualization that helped scouters see the impact of their work. Thanks again for creating such an awesome tool!
