@@ -15,7 +15,10 @@ $(document).ready(function(){
 		populateMainMenu()
 
 		function populateMainMenu(){
-			$.get("/main-menu.html",function(data){
+			var isStats = /stats/.test(location.href),
+			menu=(isStats?"//viperscout.com":"")+"/main-menu.html"
+			$.get(menu,function(data){
+				if (isStats) data = data.replace(/href\=\//g,"href=//viperscout.com/")
 				mainMenu.html(data)
 			})
 		}

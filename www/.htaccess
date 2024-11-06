@@ -30,3 +30,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} ^(.*)\.html$
 RewriteCond %1.md -f
 RewriteRule ^ /markdown.html [L]
+
+<FilesMatch main-menu\.html$>
+    Header set Access-Control-Allow-Origin "*"
+	Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+</FilesMatch>

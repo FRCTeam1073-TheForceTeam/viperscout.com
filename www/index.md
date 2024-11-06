@@ -10,13 +10,13 @@ Viper is a FIRST Robotics Competition (FRC) and FIRST Tech Challenge (FTC) scout
  - Match planning whiteboard with stats
  - ... [read more](/features.html)
  
-Have half an hour? [Watch the video](https://drive.google.com/file/d/18dF44_FT35HEZ7824Iv5jhn8GvhnvuFO/view).
+Have half an hour? [watch the video](https://drive.google.com/file/d/18dF44_FT35HEZ7824Iv5jhn8GvhnvuFO/view).
 
 See it for yourself: [live demo](https://demo.viperscout.com/)
 
 ## Install
 
-Viper is free, open-source software (MIT License). It is easy to install on Windows, Linux, Docker, or Apache... [Read more](/install.html)
+Viper is free, open-source software (MIT License). It is easy to install on Windows, Linux, Docker, or Apache... [read more](/install.html)
 
 ## Free Private Cloud Hosting
 
@@ -26,11 +26,15 @@ Your team can have an instance of Viper on a subdomain of viperscout.com: [regis
 
 Get the latest announcement or ask questions in the forums: [Viper Scouting App 2024 - Chief Delphi](https://www.chiefdelphi.com/t/viper-scouting-app-2024/)
 
-Report bugs, request features, get tech support, or chat with other Viper users: [Join the Viper Scout Discord Server](https://discord.gg/BsRfgKxHqU)
+Report bugs, request features, get tech support, or chat with other Viper users: [join the Viper Scout Discord server](https://discord.gg/BsRfgKxHqU)
 
 ## Public data
 
 Event data that we publish publicly is available at [public.viperscout.com](https://public.viperscout.com).
+
+## Viper Usage Stats
+
+Information about how much scouting is done with Viper is available at [stats.viperscout.com](https://stats.viperscout.com)
 
 ## Testimonials
 
