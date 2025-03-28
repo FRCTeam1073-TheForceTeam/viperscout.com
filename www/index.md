@@ -51,3 +51,7 @@ Thank you for your hard work, that really helped us a lot. Please keep making th
 ### Team 1772 Brazilian Trail Blazers, Gravataí, Brazil
 
 Team 1772 used Viper during the 2024 season, and it really leveled up our picklist process and understanding of other teams. It also made a big difference in how our students feel about scouting. At the start of the season, scouting felt like a chore, and nobody wanted to do it. Now, we have 7 students genuinely interested in scouting (around 35% of our team), and we’re sure Viper had a lot to do with that. It made scouting easier and more fun, especially with the data visualization that helped scouters see the impact of their work. Thanks again for creating such an awesome tool!
+
+### 5937 MI Robotics in PNW near Seattle
+
+Wow, this software has made a huge difference for us. We don't have the resources to develop our own scouting system, so I surveyed all the software available that I could find and this was the one that had everything we needed. We use a Pi locally and 10 older iPads donated from the school and the system works flawlessly. We captained the 8 alliance at our last event that ended up making the finals. Everyone on the team credits the scouting data and app with our ability to put the alliance together that allowed that run to the finals and ultimately our first visit to districts in a long time. THANK YOU! Also, the kids are WAY more interested in scouting now because it's so much easier, which is a huge plus.
